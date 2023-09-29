@@ -1,0 +1,300 @@
+#root {
+	text-align: center;
+    font-family: 'Poppins', sans-serif;
+	width: 100%;
+
+}
+
+body {
+	align-items: start !important;
+	justify-content: start !important;
+}
+
+nav {
+	display: flex;
+	
+	position: fixed;
+	z-index: 1;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: rgba(40, 40, 40, 0.80);
+	backdrop-filter: blur(10px);
+	color: white;
+	
+	width: 100%;
+	height: 64px;
+
+	font-size: 22px;
+
+	border-bottom: 1px solid white;
+	/* padding: 0px 32px; */
+}
+
+nav .container {
+	/* flex: 1; */
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+
+	font-size: 18px;
+
+}
+
+nav .nav-element {
+	flex: 1;
+	text-decoration: none;
+	color: white !important;
+}
+
+nav .nav-element a {
+	margin-right: 24px;
+}
+
+
+.nav a {
+	text-decoration: none;
+	color: white !important;
+}
+.nav a:active {
+	text-decoration: none;
+	color: white !important;
+}
+
+nav .container .contact-logo {
+    height: 30px;
+    width: auto;
+	margin-right: 16px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/*  */
+
+.content {
+	padding: 64px 128px 0px;
+	margin: 64px;
+}
+
+/* HOME */
+.home-content {
+	place-items: center !important;
+	margin-top: 10%;
+	width: 80%;
+	/* margin: auto; */
+}
+
+.home-content .description {
+	text-align: right;
+}
+
+.description .name {
+	font-size: 36px;
+	font-weight: 600;
+}
+
+.description .job {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.description .other {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.home-content .avatar {
+	border: 3px solid white;
+}
+
+
+/* ABOUT */
+.box {
+	padding: 32px;
+}
+
+.grid-container {
+	display: flex;
+}
+
+.item {
+	margin-right: 32px;
+}
+
+.item:last-child {
+	margin-right: 0px;
+}
+
+.item-content {
+	height: 100%;
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.description {
+	margin: auto;
+}
+
+.session-header {
+	display: flex;
+    align-items: center;
+	
+	margin-bottom: 16px;
+}
+
+.session-header .title {
+	font-size: 20px;
+	font-weight: 700;
+
+	margin-right: 12px;
+}
+
+.session-header .dash {
+    position: relative;
+	margin-right: 12px;
+}
+
+.session-header .dash hr {
+	height: 3px;
+	border-radius: 4px;
+	background-color: #646cff;
+	border: 0px solid #646cff;
+	opacity: 0.5;
+
+    position: absolute;
+    top: calc(50% - 2px);
+    margin:0;
+    right: 0;
+    left: 0;
+}
+
+/* COMPONENTS */
+.skill-button {
+	display: flex;
+
+	height: 64px;
+	margin-right: 16px;
+	padding: 8px;
+	border: 2px solid #646cff;
+	border-radius: 4px;
+}
+
+.skill-button:last-child {
+	margin-right: 0px;
+}
+
+.skill-button:hover {
+	cursor: pointer;
+	background-color: #363636;
+}
+
+.skill-button img {
+	flex: 1;
+	object-fit: contain;
+	margin-right: 12px;
+}
+
+.skill-button .name {
+	flex: 2;
+	margin: auto;
+	padding: 0;
+}
+
+.skill-button .name .title {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 500;
+	width: 100%;
+	list-style-type: none;
+}
+
+.skill-button .name .grade {
+	text-align: left;
+	font-size: 12px;
+	width: 100%;
+	list-style-type: none;
+	display: none;
+}
+
+
+
+.project-card {
+	height: 420px;
+	margin-right: 32px;
+	padding: 8px 16px;
+
+	background-color: #303030;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	
+	position: relative;
+}
+
+.project-card .title {
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.project-card img {
+	width: 100%;
+	border-radius: 8px;
+	margin-bottom: 8px;
+}
+
+.project-card .description {
+	text-align: left;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.project-card .footer {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	margin-top: 16px;
+	margin-bottom: 8px;
+
+	position: absolute;
+	bottom: 0;
+}
+
+.project-card .footer .tags{
+	width: 100%;
+	flex: 3;
+	display: flex;
+
+	text-align: left;
+
+	color: #646cff;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.project-card .footer .links {
+	width: 100%;
+	flex: 1;
+
+	text-align: right;
+
+	color: #646cff;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.project-card .footer .links a {
+	margin-right: 4px;
+}
+
+.project-card .footer .links a:last-child {
+	margin-right: 0px;
+}
+
+
+/*   */
