@@ -3,6 +3,7 @@ import * as React from 'react';
 import '../App.css'
 
 import { Avatar, Paper } from '@mui/material/';
+import myPhoto from '/static/images/my-photo.jpg';
 
 const darkStyle = {
 	borderRadius: '16px',
@@ -39,7 +40,7 @@ function Home() {
                                     border: '3px solid #646cff',
                                     boxShadow: '0px 0px 32px #646cff'
                                 }}
-                                src='/static/images/my-photo.jpg' />
+                                src={myPhoto} />
                         </div>
                     </div>
                 </div>

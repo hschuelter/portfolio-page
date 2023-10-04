@@ -6,8 +6,7 @@ import { Avatar, Paper } from '@mui/material/';
 
 import SessionHeader from '../components/SessionHeader';
 
-import { Tabs, Tab } from '@mui/material/';
-import { styled } from '@mui/material/styles';
+import myPhoto from '/static/images/my-photo.jpg';
 
 import pythonLogo from '/static/images/icons/skills/python-logo.svg';
 import cPlusPlusLogo from '/static/images/icons/skills/c-plusplus-logo.svg';
@@ -63,7 +62,7 @@ function About() {
 						<div className='item-content'>
 							<Avatar 
 								sx={{ width: '80%', height: 'auto' }}
-								src='./src/assets/my-photo.jpg' />
+								src={myPhoto} />
 						</div>
 					</div>
 					<div className='item' style={{flex: '8'}}>
