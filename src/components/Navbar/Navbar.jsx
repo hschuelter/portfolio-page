@@ -34,9 +34,6 @@ function Navbar() {
     const leetCodeLink = "https://leetcode.com/tururuca/";
 
     const location = useLocation().pathname;
-    // homeStyle = selected;
-    // aboutStyle = selected;
-    // projectStyle = selected;
 
     homeStyle = (location == '/') ? selected : notSelected;
     aboutStyle = (location == '/about') ? selected : notSelected;
@@ -44,15 +41,15 @@ function Navbar() {
 
     return (     
         <nav>
-            <div className="container" style={{flex: '2'}}>
+            <div className="container" style={{flex: '1 0 0'}}>
                 arthurSchuelter();
             </div>
-            <div className="container" style={{flex: '1'}}>
+            <div className="container" style={{flex: '1 0 0'}}>
                 <div className="nav-element"><Link to="/"           style={homeStyle}>Home</Link></div>
                 <div className="nav-element"><Link to="./about"     style={aboutStyle}>About</Link></div>
                 <div className="nav-element"><Link to="./projects"  style={projectStyle}>Projects</Link></div>
             </div>
-            <div className="container" style={{flex: '2'}}>
+            <div className="container" style={{flex: '1 0 0'}}>
                 <a href={githubLink}    target="_blank" > <img src={githubLogo} className="contact-logo" alt="My github profile"/> </a>
                 <a href={linkedInLink}  target="_blank" > <img src={linkedInLogo} className="contact-logo" /> </a>
                 <a href={leetCodeLink}  target="_blank" > <img src={leetCodeLogo} className="contact-logo" /> </a>

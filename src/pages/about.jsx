@@ -9,69 +9,56 @@ import SessionHeader from '../components/SessionHeader';
 import { Tabs, Tab } from '@mui/material/';
 import { styled } from '@mui/material/styles';
 
-import pythonLogo from '../assets/img/icons/skills/python-logo.svg';
-import cPlusPlusLogo from '../assets/img/icons/skills/c-plusplus-logo.svg';
-import javaScriptLogo from '../assets/img/icons/skills/JavaScript-logo.png';
-import cLogo from '../assets/img/icons/skills/c-logo.svg';
-import cSharpLogo from '../assets/img/icons/skills/c-sharp-logo.svg';
-import javaLogo from '../assets/img/icons/skills/java-logo.png';
-import htmlLogo from '../assets/img/icons/skills/html-logo.svg';
-import cssLogo from '../assets/img/icons/skills/css-logo.svg';
+import pythonLogo from '/static/images/icons/skills/python-logo.svg';
+import cPlusPlusLogo from '/static/images/icons/skills/c-plusplus-logo.svg';
+import javaScriptLogo from '/static/images/icons/skills/JavaScript-logo.png';
+import cLogo from '/static/images/icons/skills/c-logo.svg';
+import cSharpLogo from '/static/images/icons/skills/c-sharp-logo.svg';
+import javaLogo from '/static/images/icons/skills/java-logo.png';
+import htmlLogo from '/static/images/icons/skills/html-logo.svg';
+import cssLogo from '/static/images/icons/skills/css-logo.svg';
 
-import reactLogo from '../assets/img/icons/skills/react-logo.svg';
-import nodejsLogo from '../assets/img/icons/skills/nodejs-logo.svg';
-import angularLogo from '../assets/img/icons/skills/angular-logo.svg';
+import reactLogo from '/static/images/icons/skills/react-logo.svg';
+import nodejsLogo from '/static/images/icons/skills/nodejs-logo.svg';
+import angularLogo from '/static/images/icons/skills/angular-logo.svg';
 
-import gitLogo from '../assets/img/icons/skills/git-logo.svg';
-import githubLogo from '../assets/img/icons/social/github-white.png';
-import dockerLogo from '../assets/img/icons/skills/docker-logo.png';
-import scrapyLogo from '../assets/img/icons/skills/scrapy-logo.png';
+import gitLogo from '/static/images/icons/skills/git-logo.svg';
+import githubLogo from '/static/images/icons/social/github-white.png';
+import dockerLogo from '/static/images/icons/skills/docker-logo.png';
+import scrapyLogo from '/static/images/icons/skills/scrapy-logo.png';
 
 
 import SkillButton from '../components/SkillButton';
 
 const darkStyle = {
+	maxWidth: '90%',
+	minWidth: '85%',
 	borderRadius: '16px',
 	backgroundColor: '#363636',
+	padding: '32px 0px 32px 32px',
 	color: '#ffffff',
 	marginBottom: '24px'
 }
 
 const lightStyle = {
+	maxWidth: '90%',
+	minWidth: '85%',
 	borderRadius: '16px',
 	backgroundColor: '#fff',
+	padding: '32px 0px 32px 32px',
 	color: '#363636',
 	marginBottom: '24px'
 }
 
-
-
 function About() {
-	const [value, setValue] = React.useState('one');
-
-	const handleChange = (event, newValue) => {
-	  setValue(newValue);
-	};
-
 	return (
 		<div className='content'>
 			<Paper 
 				elevation={3} 
-				className='box'
 				style={darkStyle}>
 
-				<SessionHeader title={'About Me'}/>
-
-				{/* <div className='session-header'>
-					<div className='item grid-container' style={{flex: '4'}}>
-						<div className='title'>About Me</div>
-						<div className='dash' style={{minWidth: '30%'}}>
-							<hr />
-						</div>
-					</div>
-				</div> */}
-				
-				<div className='grid-container'>
+				<SessionHeader title={'About Me'}/>				
+				<div className='grid-container' style={{marginRight: '32px'}}>
 					<div className='item' style={{flex: '3'}}>
 						<div className='item-content'>
 							<Avatar 
@@ -80,44 +67,31 @@ function About() {
 						</div>
 					</div>
 					<div className='item' style={{flex: '8'}}>
-						<div className='item-content'>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-							Sed fermentum mollis rutrum.
-							Curabitur pharetra vel tortor ut rhoncus.
-							Mauris at nulla pretium, ornare erat vel, malesuada orci.
-							Pellentesque porta lorem nec vulputate luctus.
-							Pellentesque pulvinar pharetra urna ut maximus.
-							Aenean consequat vehicula felis, nec tempor ligula dictum id.
-							Etiam purus mi, malesuada ut tristique sed, varius sed lacus.
-							Donec ex justo, lobortis rhoncus lacinia ac, lobortis id dolor.
-							Mauris eu ante elit.
-							Curabitur hendrerit tortor sit amet ligula venenatis pharetra.
-							Morbi porttitor dictum libero ut pulvinar.
-							Curabitur pellentesque cursus elementum.
-							Vivamus sollicitudin enim ac cursus fermentum.
-							Fusce vel maximus ante, quis iaculis sem.
+						<div className='about-description'>
+							&#9;Hello! 
+							My name is Arthur Schuelter. 
+							I'm a computer scientist from Brazil.
+							I have 1 and a half year of experience with back-end applicantions and close to 1 year with front-end development.
+							Well, not counting the experience I gained at  University studying Computer Science.
+							I have a solid basis in Algorithms, Computational Theory, Artificial Intelligence and Security.
+							<br />
+							<br />
+							&#9;In the moment, as a hobby, I am studying and practicing Game Design and UI Design as well.
+							Which, I think, will help me further develop my skills as a Full Stack Software Developer.
+							I also plan to start a Masters postgraduate program in the near future.
+							My job is to make beautiful, clean and usable interfaces, that matches the message and identity of your company.
+							<br />
+							<br />
+							&#9;You can find me on github, on linkedin and on leetcode, and their respective icons in the navigation bar.
+							Feel free to contact me. 
+							
+
 						</div>
 					</div>
 				</div>
 			</Paper>
 
 			<SessionHeader title={'Programming Languages'}/>
-			
-			{/* <Tabs
-				value={value}
-				onChange={handleChange}
-				aria-label="wrapped label tabs example">
-					<Tab
-						value="one"
-						label="New Arrivals in the Longest Text of Nonfiction that should appear in the next line"
-						wrapped
-					>
-					</Tab>
-        		<Tab value="two" label="Item Two"> 
-				</Tab>
-        		<Tab value="three" label="Item Three" >
-				</Tab>
-			</Tabs> */}
 
 			<div>
 				<div className='grid-container' style={{marginBottom: '16px', flexWrap: 'wrap'}}>
@@ -166,7 +140,7 @@ function About() {
 
 			<SessionHeader title={'Frameworks'}/>
 			<div>
-				<div className='grid-container' style={{marginBottom: '16px'}}>
+				<div className='grid-container' style={{marginBottom: '16px', flexWrap: 'wrap'}}>
 					<SkillButton 
 						logo={reactLogo}
 						title={'React'}
@@ -187,7 +161,7 @@ function About() {
 
 			<SessionHeader title={'Tools'}/>
 			<div>
-				<div className='grid-container' style={{marginBottom: '16px'}}>
+				<div className='grid-container' style={{marginBottom: '16px', flexWrap: 'wrap'}}>
 					<SkillButton 
 						logo={gitLogo}
 						title={'Git'}

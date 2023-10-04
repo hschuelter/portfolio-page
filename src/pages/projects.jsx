@@ -7,11 +7,17 @@ import { Avatar, Paper } from '@mui/material/';
 import ProjectCard from '../components/ProjectCard';
 import SessionHeader from '../components/SessionHeader';
 
-import portfolioImg from '../assets/img/projects/portfolio.png';
-import pokedexImg from '../assets/img/projects/pokedex-js.png';
-import pokedexGif from '../assets/img/projects/pokedex-js.gif';
-import learnKana from '../assets/img/projects/learn-kana.png';
-import blankImg from '../assets/img/projects/blank.png';
+import portfolioImg from '/static/images/projects/portfolio.png';
+import pokedexImg from '/static/images/projects/pokedex-js.png';
+import pokedexGif from '/static/images/projects/pokedex-js.gif';
+import learnKana from '/static/images/projects/learn-kana.png';
+import namelessSurvivors from '/static/images/projects/nameless-survivors.png';
+import searchEngine from '/static/images/projects/searchEngine.png';
+import metadataScraper from '/static/images/projects/metadataScraper.png';
+import javaCompiler from '/static/images/projects/javaCompiler.png';
+
+
+import blankImg from '/static/images/projects/blank.png';
 
 
 
@@ -45,7 +51,7 @@ function Projects() {
                         tags={['React', 'Vite', 'MaterialUI']}
                         references={
 							[{
-                                link: 'https://github.com/hschuelter/', 
+                                link: 'https://github.com/hschuelter/portfolio-page', 
                                 icon: <GitHubIcon/>
                             }, 
                             {
@@ -85,7 +91,7 @@ function Projects() {
 
                     <ProjectCard 
                         title={'Nameless Survivors'}
-                        cover={blankImg}
+                        cover={namelessSurvivors}
                         description={`2D BulletHell Survivor Roguelike Game. Those were a bunch of keywords, wasn't it? Well, it's basically Vampire Survivors.`}
                         tags={['Unity', 'C#']}
                         references={
@@ -103,9 +109,10 @@ function Projects() {
             <div>
 				<SessionHeader title={'Academic Projects'} />
 				<div className='grid-container' style={{marginBottom: '16px', flexWrap: 'wrap'}}>
-				<ProjectCard 
+				
+                <ProjectCard 
                         title={'Scientific Article Search Engine'}
-                        cover={blankImg}
+                        cover={searchEngine}
                         description={`Back-end and Front-end for my final Comp Sci project. It's a search engine and recommendation system for scientific articles.`}
                         tags={['React', 'Node.js', 'HTML/CSS']}
                         references={
@@ -120,7 +127,7 @@ function Projects() {
 
 					<ProjectCard 
                         title={'Scientific Article Metadata Scraper'}
-                        cover={blankImg}
+                        cover={metadataScraper}
                         description={'Web Scraping and Web Crawling scripts for caputring scientific articles metadata.'}
                         tags={['Python', 'Scrapy', 'PostgreSQL']}
                         references={
@@ -131,8 +138,8 @@ function Projects() {
 
 					<ProjectCard 
                         title={'Java Compiler in C'}
-                        cover={blankImg}
-                        description={`Compiler of a made up programming language (Java--). C was used for the Data Structures, compiler functions, with full lexic and syntactic analysis. Final project for the Compilers course.`}
+                        cover={javaCompiler}
+                        description={`Compiler of a made up programming language (Java--). C was used for the Data Structures, compiler functions, with full lexic and syntactic analysis.`}
                         tags={['C', 'GNU Bison', 'Yacc', 'Flex']}
                         references={
 							[{

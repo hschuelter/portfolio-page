@@ -40,6 +40,7 @@ nav .container {
 
 	font-size: 18px;
 
+	/* min-width: 250px; */
 }
 
 nav .nav-element {
@@ -48,8 +49,12 @@ nav .nav-element {
 	color: white !important;
 }
 
-nav .nav-element a {
-	margin-right: 24px;
+nav .nav-element {
+	margin-right: 12px;
+}
+
+nav .nav-element:last-child {
+	margin-right: 0px;
 }
 
 
@@ -75,8 +80,10 @@ nav .container .contact-logo {
 /*  */
 
 .content {
-	padding: 64px 128px 0px;
+	/* padding: 64px 128px 0px; */
+	padding-top: 64px;
 	margin: 64px;
+	min-width: 500px;
 }
 
 /* HOME */
@@ -94,6 +101,7 @@ nav .container .contact-logo {
 .description .name {
 	font-size: 36px;
 	font-weight: 600;
+	min-width: 300px;
 }
 
 .description .job {
@@ -118,6 +126,7 @@ nav .container .contact-logo {
 
 .grid-container {
 	display: flex;
+	min-width: 300px;
 }
 
 .item {
@@ -135,6 +144,18 @@ nav .container .contact-logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-width: 50%;
+}
+
+.about-description {
+	height: 100%;
+	width: 100%;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	white-space: pre-wrap;
 }
 
 .description {
@@ -191,7 +212,8 @@ nav .container .contact-logo {
 
 .skill-button:hover {
 	cursor: pointer;
-	background-color: #363636;
+	background-color: hsla(237, 100%, 70%, 0.15);
+	/* background-color: #363636; */
 }
 
 .skill-button img {
@@ -228,6 +250,7 @@ nav .container .contact-logo {
 	height: 420px;
 	margin-right: 32px;
 	padding: 8px 16px;
+	min-width: 300px;
 
 	background-color: #303030;
 	border: 1px solid rgba(255, 255, 255, 0.1);
@@ -295,6 +318,3 @@ nav .container .contact-logo {
 .project-card .footer .links a:last-child {
 	margin-right: 0px;
 }
-
-
-/*   */

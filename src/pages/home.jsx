@@ -39,7 +39,7 @@ function Home() {
                                     border: '3px solid #646cff',
                                     boxShadow: '0px 0px 32px #646cff'
                                 }}
-                                src='./src/assets/my-photo.jpg' />
+                                src='/static/images/my-photo.jpg' />
                         </div>
                     </div>
                 </div>
