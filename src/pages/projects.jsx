@@ -55,7 +55,7 @@ function Projects() {
                                 icon: <GitHubIcon/>
                             }, 
                             {
-                                link: 'http://localhost:5173/',
+                                link: 'https://bit.ly/arthur-schuelter',
                                 icon: <OpenInNewIcon/>
                             }]} />
 
